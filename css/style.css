@@ -18,10 +18,13 @@
   --special-yellow: #FFBF47;
   --success: #5FBB2D;
   --error: #BD2732;
+  --hover-red: #CA2C37;
+  --dark-red: #BA2732;
   --cyan: #3BBCE3;
   --purple: #DC91D8;
   --light-green: #8ED78F;
   --sand: #FFD180;
+  --transparent-sand: rgb(255, 209, 128, 0.5);
 }
 
 body {
@@ -123,6 +126,14 @@ h1,
   background-color: var(--basic-red);
 }
 
+.button:hover {
+  background-color: var(--hover-red);
+}
+
+.button:visited {
+  background-color: var(--dark-red);
+}
+
 .new-label {
   text-transform: uppercase;
   color: var(--basic-white);
@@ -148,13 +159,23 @@ h1,
   background-color: var(--basic-red);
 }
 
+.small-logo:visited {
+  background-color: var(--error);
+}
+
 .bookmarks-link,
 .shopping-cart-link,
 .submit-order-button {
   font-size: 18px;
   line-height: 24px;
   color: var(--basic-white);
-  background-color: transparent;
+
+}
+
+.bookmarks-link:visited,
+.shopping-cart-link:visited,
+.submit-order-button:visited {
+  color: var(--transparent-white)
 }
 
 .submit-order-button {
@@ -174,6 +195,17 @@ h1,
   font-size: 18px;
   line-height: 24px;
   color: var(--basic-white);
+}
+
+.search-form input:focus {
+  border: none;
+  background-color: var(--basic-white);
+}
+
+.search-form input:focus::placeholder {
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--basic-black);
 }
 
 .short-site-description {
@@ -209,15 +241,34 @@ h1,
   border: none;
 }
 
+.login-button:hover,
+.signup-button:hover {
+  color: var(--basic-red);
+}
+
+.login-button:visited,
+.signup-button:visited {
+  color: var(--basic-greylight);
+}
+
+
 .site-navigation {
   list-style: none;
-  background-color: var(--extra-dark-background);
+  background-color: var(--basic-darkgrey);
 }
 
 .site-navigation a {
   font-size: 18px;
   line-height: 24px;
   color: var(--basic-white);
+}
+
+.site-navigation a:hover {
+  background-color: var(--extra-dark-background);
+}
+
+.site-navigation a:visited {
+  color: var(--transparent-white);
 }
 
 .slider-header {
@@ -243,6 +294,14 @@ h1,
   text-transform: uppercase;
   color: var(--basic-white);
   background-color: var(--transparent-white);
+}
+
+.products-and-services-button:hover {
+  background-color: var(--basic-greylight);
+}
+
+.products-and-services-button:visited {
+  background-color: var(--text-grey);
 }
 
 .products-and-services-list li:first-child,
@@ -318,6 +377,10 @@ h1,
   background-color: var(--basic-darkgrey);
 }
 
+.services-list-item-link:hover {
+  background-color: var(--extra-dark-background);
+}
+
 .services-list-item-link:active {
   color: var(--basic-darkgrey);
   background-color: var(--basic-white);
@@ -367,6 +430,14 @@ h1,
   color: var(--basic-white);
 }
 
+.bottom-infoblock-link:hover {
+  text-decoration: underline;
+}
+
+.bottom-infoblock-link:visited {
+  color: var(--transparent-white);
+}
+
 .product-categories-list {
   list-style: none;
 }
@@ -377,6 +448,14 @@ h1,
   font-weight: regular;
   font-style: normal;
   color: var(--sand);
+}
+
+.product-categories-list a:hover {
+  text-decoration: underline;
+}
+
+.product-categories-list a:visited {
+  color: var(--transparent-sand);
 }
 
 .main-footer {
@@ -393,6 +472,23 @@ h1,
   font-weight: regular;
   font-style: normal;
   color: var(--sand);
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+.footer-link:visited {
+  color: var(--basic-red);
+}
+
+.social-button {
+  background-color: var(--extra-dark-background);
+}
+
+.social-button:hover,
+.social-button:visited {
+  background-color: var(--basic-red);
 }
 
 .feedback-form input::placeholder,
