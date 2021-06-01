@@ -31,7 +31,7 @@ body {
   min-width: 960px;
   margin: 0;
   padding: 0;
-  font-family: Cuprum, 'PT Sans', sans-serif;
+  font-family: 'Cuprum', 'PT Sans', 'Calibri', sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
@@ -48,12 +48,12 @@ img {
   height: auto;
 }
 
-h1,
-.bottom-infoblock-title,
-.promo-products-and-services-title,
-.modal-feedback-title,
-.modal-map-title {
-  display: none;
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 
 .first-level-title {
@@ -180,10 +180,6 @@ h1,
 
 .submit-order-button {
   background-color: var(--basic-green);
-}
-
-.search-form label {
-  display: none;
 }
 
 .search-form input {
