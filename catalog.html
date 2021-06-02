@@ -1,55 +1,58 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт - Каталог</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cuprum:wght@400;700&family=PT+Sans:wght@400;700&display=swap">
-    <link href="normalize.css" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicon/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicon/180.png">
     <link rel="manifest" href="manifest.webmanifest">
   </head>
-  <body>
-    <header>
-      <a href="index.html">Техномарт</a>
-      <form action="https://echo.htmlacademy.ru" method="post">
-        <label>
-          Поле поиска
-          <input type="text" name="search" placeholder="Поиск:">
-        </label>
-      </form>
-      <ul>
-        <li>
-          <a href="#">Закладки: 0</a>
-        </li>
-        <li>
-          <a href="#">Корзина: 10</a>
-        </li>
-        <li>
-          <a href="#">Оформить заказ</a>
-        </li>
-      </ul>
-      <p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
-      <div>
-        <a href="tel:+78005558628">+7 800 555-86-28</a>
-        <p>г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</p>
+  <body class="page-body">
+    <header class="main-header">
+      <div class="header-top-row">
+        <a href="index.html" class="small-logo">Техномарт</a>
+        <form action="https://echo.htmlacademy.ru" method="post" class="search-form">
+            <label for="search" class="visually-hidden">Поле поиска</label>
+            <input type="text" name="search" placeholder="Поиск:" class="search-input">
+        </form>
+        <ul class="header-top-row-list">
+          <li>
+            <a href="#" class="bookmarks-link">Закладки: 0</a>
+          </li>
+          <li>
+            <a href="#" class="shopping-cart-link-nonempty">Корзина: 10</a>
+          </li>
+          <li>
+            <a href="#" class="submit-order-button">Оформить заказ</a>
+          </li>
+        </ul>
       </div>
-      <ul>
-        <li>
-          <a href="#">Равшан Джамшутович</a>
-          <a href="#">Выйти</a>
+      <p class="short-site-description">Интернет-магазин строительных материалов и инструментов для ремонта</p>
+      <div class="header-contacts">
+        <a href="tel:+78005558628" class="header-phonenumber">+7 800 555-86-28</a>
+        <p class="header-address">г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</p>
+      </div>
+      <ul class="personal-account-buttons">
+        <li class="personal-account-block">
+          <a href="#" class="personal-account-button">Равшан Джамшутович</a>
+          <a href="#" class="signout-button">Выйти</a>
         </li>
         <li>
-          <a href="#">Мои заказы</a>
+          <a href="#" class="my-orders-link">Мои заказы</a>
         </li>
         <li>
-          <a href="#">Личный кабинет</a>
+          <img src="img/middot.svg" width="6" height="7" alt="Точка-разделитель">
+        </li>
+        <li>
+          <a href="#" class="personal-account-link">Личный кабинет</a>
         </li>
       </ul>
-      <nav>
-        <ul>
+      <nav class="main-navigation">
+        <ul class="site-navigation">
           <li><a href="#">Главная</a></li>
           <li><a href="#">Компания</a></li>
           <li>Каталог</li>
@@ -60,48 +63,52 @@
         </ul>
       </nav>
     </header>
-    <main>
-      <h1>Интернет-магазин Техномарт - Каталог</h1>
-      <section>
-        <h2>Хлебные крошки</h2>
-        <ul>
+    <main class="container">
+      <h1 class="visually-hidden">Интернет-магазин Техномарт - Каталог</h1>
+      <section class="catalog-page">
+        <h2 class="visually-hidden">Хлебные крошки</h2>
+        <ul class="breadcrumbs-list">
           <li>
             <a href="index.html"><img src="img/icon-home.svg" width="14" height="12" alt="Домой"></a>
           </li>
-          <li>
-            <a href="#">Каталог</a>
+          <li class="list-item-with-custom-bullet">
+            <span class="sixth-level-title">Каталог</span>
           </li>
-          <li>
-            <a href="#">Инструмент</a>
+          <li class="list-item-with-custom-bullet">
+            <a href="#" class="sixth-level-title">Инструмент</a>
           </li>
-          <li>
-            <a href="#">Перфораторы</a>
-          </li>
-        </ul>
-        <p>Перфораторы</p>
-      </section>
-      <section>
-        <h2>Сортировка:</h2>
-        <ul>
-          <li>
-            <button type="button">По цене</button>
-          </li>
-          <li>
-            <button type="button">По типу</button>
-          </li>
-          <li>
-            <button type="button">По функционалу</button>
-          </li>
-          <li>
-            <button type="button"><img src="img/icon-up.svg" width="11" height="10" alt="Стрелка сортировки по возрастанию"></button>
-          </li>
-          <li>
-            <button type="button"><img src="img/icon-down.svg" width="11" height="10" alt="Стрелка сортировки по убыванию"></button>
+          <li class="list-item-with-custom-bullet">
+            <a href="#" class="sixth-level-title">Перфораторы</a>
           </li>
         </ul>
+        <p class="second-level-title products-category-title">Перфораторы</p>
       </section>
-      <section>
-        <h2>Фильтр:</h2>
+      <section class="sorter">
+        <h2 class="sorter-title">Сортировка:</h2>
+        <ul class="sorter-list">
+          <li>
+            <button type="button" class="sorter-text-button">По цене</button>
+          </li>
+          <li>
+            <button type="button" class="sorter-text-button">По типу</button>
+          </li>
+          <li>
+            <button type="button" class="sorter-text-button">По функционалу</button>
+          </li>
+          <li>
+            <button type="button">
+              <span class="ascending-sort-button"></span>
+            </button>
+          </li>
+          <li>
+            <button type="button">
+              <span class="descending-sort-button"></span>
+            </button>
+          </li>
+        </ul>
+      </section>
+      <section class="filter">
+        <h2 class="visually-hidden">Фильтр:</h2>
         <form action="https://echo.htmlacademy.ru" method="post">
           <fieldset>
             <legend>Цена:</legend>
