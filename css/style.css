@@ -29,9 +29,9 @@
 }
 
 body {
-  min-width: 940px;
+  min-width: 960px;
   margin: 0;
-  padding: 0;
+  padding: 0 20px;
   font-family: 'Cuprum', 'PT Sans', 'Calibri', sans-serif;
   font-size: 18px;
   line-height: 24px;
@@ -56,6 +56,7 @@ img {
 .container {
   width: 940px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 .page-body {
@@ -164,11 +165,18 @@ img {
   background-color: var(--basic-background);
 }
 
+.extradark-wrapper {
+  background-color: var(--extra-dark-background);
+}
+
+.dark-wrapper {
+  background-color: var(--basic-darkgrey);
+}
+
 .header-top-row {
   display: grid;
   grid-template-columns: 220px 1fr 2fr;
   grid-template-rows: 42px;
-  background-color: var(--extra-dark-background);
   align-items: center;
 }
 
@@ -232,8 +240,6 @@ img {
 .submit-order-button {
   background-color: var(--basic-green);
 }
-
-
 
 .search-form input {
   border: none;
@@ -331,7 +337,7 @@ img {
   grid-template-columns: repeat(7, 1fr);
   grid-template-rows: 60px;
   list-style: none;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   background-color: var(--basic-darkgrey);
   text-align: center;
@@ -584,9 +590,13 @@ img {
 }
 
 .bottom-infoblock {
+  background-color: var(--basic-darkgrey);
+}
+
+.bottom-grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  background-color: var(--basic-darkgrey);
+  grid-template-rows: 68px 1fr;
 }
 
 .bottom-infoblock {
@@ -607,10 +617,12 @@ img {
 }
 
 .large-logo {
-  padding: 21px 42px 25px 42px;
-  margin-bottom: 0;
+  display: inline-block;
+  padding: auto;
   text-align: center;
-  width: 136px;
+  vertical-align: middle;
+  width: 220px;
+  height: 68px;
   font-size: 30px;
   text-transform: uppercase;
   color: var(--basic-white);
@@ -663,15 +675,24 @@ img {
 }
 
 .main-footer {
+  background-color: var(--extra-dark-background);
+}
+
+.footer-grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  background-color: var(--extra-dark-background);
   padding-top: 35px;
   padding-bottom: 35px;
 }
 
 .footer-grid-column:nth-child(2) {
   justify-self: center;
+}
+
+.footer-grid-column:last-child {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 51px;
 }
 
 .social-links-list {
